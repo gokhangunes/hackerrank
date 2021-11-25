@@ -1,0 +1,23 @@
+<?php 
+
+$array = [
+			1,
+			4,
+			9,
+			2,
+			55,
+			150,
+			2,
+			11,
+		];
+
+print_r($array);
+
+$count = count($array) -1;
+
+foreach($array as $key => $item) {
+	$array[$count-$key] = $item;
+}
+
+print_r($array);
+?>
